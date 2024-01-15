@@ -1,0 +1,257 @@
+@media(max-width:1150px) {
+    .form-input {
+        max-width: 300px;
+        font-size: 17px;
+        padding: 10px 13px 10px 40px;
+
+    }
+
+
+
+
+
+    .header-nav {
+        position: absolute;
+        height: 50vh;
+        flex-direction: column;
+        transform: translateX(-120%);
+        width: 50vh;
+        top: 0;
+        left: 0;
+        background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+        z-index: 50;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    
+
+    .nav-list {
+        flex-direction: column;
+        padding: 100px;
+        text-align: center;
+    }
+
+    .header-buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-menu {
+        background-image: url(../img/search.png);
+        height: 23px;
+        width: 30px;
+        margin-left: 25px;
+    }
+
+    .header-search {
+        background-image: url(../img/search.svg);
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+    }
+
+    .main-title {
+        font-size: 40px;
+    }
+
+    .main-deacr {
+        font-size: 15px;
+    }
+
+    .main__stats-item {
+        font-size: 17px;
+    }
+
+    .main-span {
+        font-size: 25px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content__img {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .about-content__title {
+        text-align: center;
+    }
+
+    .about-content_btn {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .company-savg {
+        height: 50px;
+
+    }
+
+
+    .about-descr {
+        font-size: 15px;
+    }
+
+
+    .about-content-text {
+        min-width: 350px;
+    }
+
+    .cards-items__cover {
+        height: 350px;
+    }
+
+    .cards-items__img {
+        height: 350px;
+    }
+
+    .top-list__avatar {
+        top: 46%;
+    }
+
+}
+
+@media(max-width:850px) {
+
+
+    .main {
+        flex-direction: column;
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+
+    .main-left {
+        margin: 0;
+    }
+
+    .main-img {
+        max-width: 100%;
+    }
+
+    .company {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-savg {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 85%;
+
+    }
+
+    .about-content__img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .cards-genres {
+        flex-wrap: wrap;
+    }
+
+    .cards-genres__btn {
+        width: 45%;
+    }
+
+    .cards-items {
+        justify-content: center;
+    }
+
+    .cards-items__item {
+        flex-basis: 60%;
+
+    }
+
+    .cards-items__cover {
+        height: 250px;
+
+    }
+
+    .cards-items__img {
+        height: 250px;
+    }
+
+    .top-list__item {
+        max-width: 70%;
+    }
+
+    .top-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .FAG {
+        flex-direction: column;
+    }
+
+
+
+    .get-started {
+        padding: 50px;
+    }
+
+    .started-title {
+        font-size: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer-info {
+        max-width: 50%;
+        text-align: center;
+
+    }
+
+    .footer-content .footer-info {
+        margin-right: 0;
+    }
+
+    .mail {
+        position: relative;
+        left: 33%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .contacts-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .contacts-links__item {
+        margin: 0;
+
+    }
+}
+
+@media(max-width:650px) {
+    .header-logo {
+        display: none;
+    }
+    .form {
+        transition: 0.3s;
+        transform: translateY(-150%);
+    }
+    .header-search {
+        display: flex;
+    }
+}
+.nav--active {
+    transform: none;
+}

@@ -1,0 +1,241 @@
+@media(max-width:850px) {
+
+    .nav {
+        margin-bottom: 70px;
+    }
+
+    .nav__list {
+        justify-content: center;
+        gap: 50px;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        overflow-y: auto;
+        background-color: #000;
+        transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        transform: translateX(-100%);
+        visibility: hidden;
+        z-index: 20;
+
+    }
+
+    .nav--active {
+        transform: none;
+        visibility: visible;
+    }
+
+
+    .burger {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 20px;
+    }
+
+    .burger--active {
+
+        z-index: 100;
+    }
+
+    .burger__line {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.3s ease-in-out;
+    }
+
+    .burger__line:first-child {
+        top: 0;
+    }
+
+    .burger__line:last-child {
+        top: calc(100% - 2px);
+        width: 30%;
+
+    }
+
+    .burger__line:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 70%;
+    }
+
+    .burger--active .burger__line {
+        background-color: #4452FE;
+    }
+
+    .burger--active .burger__line:first-child {
+        width: 30%;
+    }
+
+    .burger--active .burger__line:last-child {
+        width: 100%;
+    }
+
+    .hero__title {
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 62px;
+    }
+
+    .hero__text {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .features {
+        margin-bottom: 200px;
+    }
+
+    .features__content {
+        flex-direction: column;
+
+    }
+
+    .features__chat {
+        max-width: 100%;
+        margin-bottom: 130px;
+    }
+
+    .features__chart {
+        left: 50%;
+
+    }
+
+    .features__list {
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:650px) {
+    .container {
+        padding: 0 70px;
+    }
+
+    .hero__text {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .hero__links {
+        width: fit-content;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stats {
+        background-size: 150%;
+        height: 50vh;
+    }
+
+    .contents__items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contents__item {
+        max-width: 90%;
+    }
+
+    .gallery__images-top {
+        padding: 0;
+        margin-bottom: 30px;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .gallery__images-bot {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    .partners__icons {
+        flex-direction: column;
+        gap: 50px;
+
+    }
+
+    .partners__icons-top,
+    .partners__icons-bot {
+        width: 100%;
+    }
+
+    .testimonials__list {
+        flex-direction: column;
+    }
+
+    .testimonials__item {
+        max-width: 100%;
+    }
+
+    .openType {
+        padding: 0;
+    }
+
+    .openType__content {
+        flex-direction: column;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .openType__content-left {
+        text-align: center;
+        padding-bottom: 130px;
+    }
+
+    .openType__content-title {
+        margin-bottom: 60px;
+    }
+
+    .openType__content {
+        display: flex;
+        align-items: center;
+    }
+
+    .openType__image {
+        max-width: 90%;
+
+    }
+
+    .openType__content-image {
+        border-radius: 0;
+    }
+
+    .footer__content,
+    .footer__links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer__links {
+        gap: 75px;
+        margin-bottom: 75px;
+    }
+
+    .footer__socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+}
+
+@media(max-width:500px) {
+    .header__logo {
+        display: none;
+    }
+}
+@media(max-width:400px){
+    .container{
+        padding: 0 35px;
+    }
+}
