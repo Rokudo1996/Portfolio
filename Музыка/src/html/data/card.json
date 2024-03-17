@@ -1,0 +1,38 @@
+[
+    {
+        "img": "card.png",
+        "name": "Skullcandy - Crusher anc 2 wireless headphones",
+        "price": "$299.99",
+        "status": "new"
+
+    },
+    {
+        "img": "card2.png",
+        "name": "Beats Studio Pro",
+        "price": "$349.99",
+        "status": "new"
+
+    },
+    {
+        "img": "card3.png",
+        "name": "Sony - WH-CH720N Wireless Noise Canceling",
+        "price": "$149.99",
+        "status": "new"
+
+    },
+    {
+        "img": "card4.png",
+        "name": "Skullcandy - Rail True Wireless Earbuds",
+        "price": " $79.99",
+        "status": "new"
+
+    },
+    {
+        "img": "card5.png",
+        "name": "Beats Studio Pro",
+        "price": "$224.99",
+        "status": "new"
+
+    }
+
+]

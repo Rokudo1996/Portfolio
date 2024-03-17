@@ -1,0 +1,129 @@
+.promotion {
+    position: relative;
+    background-color: #FFDD99;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url(../img/promo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    .promo__mobile {
+        display: none;
+
+        @media (max-width: 1000px) {
+            display: flex;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    .promotion__container {
+        padding-left: calc((100% - var(--container-width)) / 2 + var(--container-padding));
+        padding-right: calc((100% - var(--container-width)) / 2);
+        float: right;
+
+        @media (max-width: 1000px) {
+            float: none;
+            text-align: center;
+
+            .promotion__timer {
+                justify-content: center;
+            }
+
+        }
+    }
+
+    .promotion__content {
+        padding: 100px 72px;
+
+        @media (max-width: 1100px) {
+            padding: 28px 32px;
+        }
+    }
+
+    .promotion__tag {
+        color: #377DFF;
+        font-size: 16px;
+        font-family: 700;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+
+    .promotion__title {
+        font-size: 40px;
+        line-height: 1.1;
+        font-weight: 500;
+        margin-bottom: 16px;
+
+        @media (max-width: 1000px) {
+            font-size: 34px;
+
+        }
+    }
+
+    .promotion__text {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 24px;
+
+        @media (max-width: 600px) {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .promotion__epx {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+
+    .promotion__link {
+        font-size: 16px;
+        letter-spacing: -0.4px;
+        padding: 10px 40px;
+        line-height: 40px;
+    }
+
+    .promotion__timer {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .timer__item {
+        text-align: center;
+    }
+
+    .timer__value {
+        width: 60px;
+        height: 60px;
+        background-color: #fefefe;
+        font-weight: 500;
+        font-size: 34px;
+        letter-spacing: -0.6ps;
+        line-height: 60px;
+    }
+
+    .timer__desc {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

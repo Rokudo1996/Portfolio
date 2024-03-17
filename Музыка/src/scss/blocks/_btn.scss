@@ -1,0 +1,13 @@
+.btn {
+    border-radius: 8px;
+    background-color: #141718;
+    color: #fff;
+    font-size: 18px;
+    line-height: 32px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #2d3233;
+      
+    }
+}

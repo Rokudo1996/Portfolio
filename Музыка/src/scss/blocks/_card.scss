@@ -1,0 +1,142 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 262px;
+    margin: 0 auto;
+
+    .card__link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+    }
+
+    &:hover {
+        .card__btn {
+            display: block;
+            transform: none;
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    .card__pic {
+
+        position: relative;
+    }
+
+    .card__btn {
+        position: absolute;
+        z-index: 10;
+        bottom: 16px;
+        right: 16px;
+        left: 16px;
+        opacity: 0;
+        transform: translateY(50%);
+        transition: 0.2s ease-in-out;
+        pointer-events: none;
+
+        @media(max-width: 800px) {
+            left: 20px;
+            right: 20px;
+        }
+    }
+
+    .btn {
+        width: 100%;
+        padding: 9px;
+
+        @media(max-width: 800px) {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+
+    .card__new {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        padding: 4px 16px;
+        text-transform: uppercase;
+        color: #121212;
+        background-color: #fff;
+        font-weight: 700;
+        border-radius: 4px;
+        line-height: 1;
+
+        @media(max-width: 700px) {
+            top: 10px;
+            left: 10px;
+            padding: 2px 8px;
+            font-weight: 600;
+        }
+    }
+
+    .card__fav {
+        z-index: 10;
+        position: absolute;
+        background-color: #fff;
+        transition: 0.3s;
+        right: 16px;
+        top: 16px;
+        border-radius: 50%;
+        box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.12);
+
+        @media(max-width: 700px) {
+            top: 10px;
+            right: 10px;
+        }
+
+        &:hover {
+            background-color: #d048e2;
+
+            svg {
+                path {
+                    fill: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+
+
+
+    .fav__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+
+        box-shadow: 0 8px 16px -8px rgba(15, 15, 15, 0.12);
+
+
+        path {
+            fill: #6C7275;
+            transition: 0.3s;
+        }
+
+    }
+
+    .card__info {
+        display: grid;
+        gap: 4px;
+    }
+
+    .card__name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #121212;
+    }
+
+    .card__price {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #121212;
+    }
+}
